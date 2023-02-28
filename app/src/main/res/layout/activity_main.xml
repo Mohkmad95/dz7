@@ -39,6 +39,7 @@
                 android:layout_width="80dp"
                 android:id="@+id/btn_clear"
                 android:insetTop="0dp"
+                android:onClick="onNumberClick"
                 android:text="Ac"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -49,6 +50,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/plusminus"
                 android:layout_width="80dp"
+                android:onClick="onOperationClick"
                 android:layout_marginHorizontal="15dp"
                 android:insetTop="0dp"
                 android:text="+/-"
@@ -60,6 +62,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/procent"
+                android:onClick="onOperationClick"
                 android:layout_width="80dp"
                 android:layout_marginEnd="15dp"
                 android:insetTop="0dp"
@@ -72,7 +75,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="noperetio"
+                android:onClick="onOperationClick"
                 android:id="@+id/delenie"
 
                 android:insetTop="0dp"
@@ -93,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:id="@+id/btn_seven"
                 android:layout_width="80dp"
                 android:insetTop="0dp"
@@ -105,7 +108,7 @@
                 android:backgroundTint="@color/grey"
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_width="80dp"
                 android:id="@+id/btn_eight"
                 android:layout_marginHorizontal="15dp"
@@ -118,7 +121,7 @@
                 android:backgroundTint="@color/grey"
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_width="80dp"
                 android:id="@+id/btn_nine"
                 android:layout_marginEnd="15dp"
@@ -132,7 +135,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="operetion"
+                android:onClick="onOperationClick"
                 android:id="@+id/umnojenie"
                 android:insetTop="0dp"
                 android:text="*"
@@ -152,7 +155,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_width="80dp"
                 android:id="@+id/btn_four"
                 android:insetTop="0dp"
@@ -164,7 +167,7 @@
                 android:backgroundTint="@color/grey"
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:id="@+id/btn_five"
                 android:layout_width="80dp"
                 android:layout_marginHorizontal="15dp"
@@ -177,7 +180,7 @@
                 android:backgroundTint="@color/grey"
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_width="80dp"
                 android:id="@+id/btn_six"
                 android:layout_marginEnd="15dp"
@@ -191,7 +194,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="operetion"
+                android:onClick="onOperationClick"
                 android:id="@+id/minus"
                 android:insetTop="0dp"
                 android:text="-"
@@ -213,7 +216,7 @@
             android:layout_height="wrap_content">
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:id="@+id/btn_one"
                 android:insetTop="0dp"
                 android:text="1"
@@ -226,7 +229,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_two"
                 android:layout_width="80dp"
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_marginHorizontal="15dp"
                 android:insetTop="0dp"
                 android:text="2"
@@ -239,7 +242,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_tree"
                 android:layout_width="80dp"
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:layout_marginEnd="15dp"
                 android:insetTop="0dp"
                 android:text="3"
@@ -251,7 +254,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="operetion"
+                android:onClick="onOperationClick"
                 android:id="@+id/plus"
                 android:insetTop="0dp"
                 android:text="+"
@@ -271,7 +274,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.button.MaterialButton
-                android:onClick="clickNumber"
+                android:onClick="onNumberClick"
                 android:id="@+id/btn_zero"
                 android:layout_width="180dp"
                 android:insetTop="0dp"
@@ -299,7 +302,7 @@
                 android:layout_height="80dp"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="80dp"
-                android:onClick="ravno"
+                android:onClick="onOperationClick"
                 android:id="@+id/rawno"
                 android:insetTop="0dp"
                 android:text="="
