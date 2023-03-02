@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".MainActivity">
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/next_menu"
+        android:layout_margin="88dp"
+        android:textSize="30sp"
+        android:text="@string/next_menu"
+        android:visibility="gone"
+        app:cornerRadius="15dp"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"/>
+
 <FrameLayout
     app:layout_constraintBottom_toTopOf="@id/container"
     app:layout_constraintTop_toTopOf="parent"

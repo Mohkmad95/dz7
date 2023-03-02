@@ -16,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
     private String operation;
     private String opertion2;
     private int result;
+    View nextMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
+        nextMenu = findViewById(R.id.next_menu);
     }
 
     public void onNumberClick(View view) {
