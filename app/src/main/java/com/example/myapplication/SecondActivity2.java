@@ -19,12 +19,16 @@ public class SecondActivity2 extends AppCompatActivity {
         btnExport = findViewById(R.id.btn_export);
         textView = findViewById(R.id.tv_corretn);
     }
+
     @Override
     protected void onStart() {
         super.onStart();
-        btnExport.setOnClickListener(v -> finishAffinity());
-        finishAffinity();
-        textView.setText(getIntent().getStringExtra("rusult"));
+        btnExport.setOnClickListener(v ->{
+            finishAffinity();
+        });
+
+        textView.setText(getIntent().getStringExtra("resault"));
+
     }
 
 }

@@ -2,6 +2,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -24,6 +25,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
         nextMenu = findViewById(R.id.next_menu);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        nextMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,SecondActivity2.class);
+                String resault = ((TextView) findViewById(R.id.textView)).getText().toString();
+                intent.putExtra("resault", resault);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onNumberClick(View view) {
@@ -66,10 +81,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         isOperationClick = false;
+        nextMenu.setVisibility(View.GONE);
 
     }
 
     private void appendNumber(String number) {
+        nextMenu.setVisibility(View.INVISIBLE);
         if (textView.getText().toString().equals("0") || isOperationClick) {
             textView.setText(number);
         } else {
@@ -141,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
                     }
                     textView.setText(String.valueOf(result));
+                    nextMenu.setVisibility(View.VISIBLE);
                 }
 
                 isOperationClick = true;
